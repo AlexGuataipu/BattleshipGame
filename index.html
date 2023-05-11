@@ -4,9 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Russo+One&display=swap" rel="stylesheet">
+  <title>Battleship</title>
 </head>
 <body>
-  
+  <div id="container">
+    <h1>Battleship</h1>
+    <div id="game-info">
+      <p class="textFormat">Turn: <span id="turn-display"></span></p>
+      <p class="textFormat">Info: <span id="info"></span></p>
+    </div>
+    <div id="gameboard-container"></div>
+    <h4 class="textFormat">Layout your ships!</h4>
+    <div class="battleship-container">
+      <div draggable=true class="destroyer destroyer-preview"></div>
+      <div draggable=true class="submarine submarine-preview"></div>
+      <div draggable=true class="cruiser cruiser-preview"></div>
+      <div draggable=true class="battleship battleship-preview"></div>
+      <div draggable=true class="carrier carrier-preview"></div>
+    </div>
+
+    <button id="flip-button">FLIP</button>
+    <button id="start-button">START</button>
+  </div>
 </body>
 </html>
