@@ -8,7 +8,7 @@
   <script src="game.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Russo+One&display=swap" rel="stylesheet">
   <title>Battleship</title>
 </head>
 <body>
@@ -19,17 +19,25 @@
       <p class="textFormat">Info: <span id="info"></span></p>
     </div>
     <div id="gameboard-container"></div>
-    <h4 class="textFormat">Layout your ships!</h4>
     <div class="battleship-container">
-      <div draggable=true class="destroyer destroyer-preview"></div>
-      <div draggable=true class="submarine submarine-preview"></div>
-      <div draggable=true class="cruiser cruiser-preview"></div>
-      <div draggable=true class="battleship battleship-preview"></div>
-      <div draggable=true class="carrier carrier-preview"></div>
+      <div id="0" draggable=true class="destroyer destroyer-preview"></div>
+      <div id="1" draggable=true class="submarine submarine-preview"></div>
+      <div id="2" draggable=true class="cruiser cruiser-preview"></div>
+      <div id="3" draggable=true class="battleship battleship-preview"></div>
+      <div id="4" draggable=true class="carrier carrier-preview"></div>
     </div>
-
     <button id="flip-button">FLIP</button>
     <button id="start-button">START</button>
+    <div id="gameRules">
+      <h2>How To Play:</h2>
+      <p>
+        1. Place your ships on the grid. You can flip the ships to better fit your placement style.<br>
+        2. Once your ships are placed, pick a spot on the grid where the enemies ship might be.<br>
+        3. You both have the same ships (destroyer, submarine, cruiser, battleship, carrier).<br>
+        4. If you hit a ship try to pick a spot close to the area you hit to sink all the ships.<br>
+        5. Sink the enemies ship before they sink all of yours!
+      </p>
+    </div>
   </div>
 </body>
 </html>

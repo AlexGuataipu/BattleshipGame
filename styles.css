@@ -2,37 +2,59 @@ body{
   background-image: url('summer-background-sea-water.jpg');
   margin: 0;
 }
- h1{
+
+.textFormat{
+  font-family: 'Russo One', sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+h1{
   font-family: 'Russo One', sans-serif;
   font-size: 128px;
   text-align: center;
   margin: 0;
- }
+}
+
+button{
+  margin-top: 20px;
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px black solid;
+  background-color: aqua;
+}
+
+button:hover{
+  transition: 0.2s;
+  background-color: aquamarine;
+}
 
 #container{
   margin: auto;
   background-color: antiquewhite;
-  width: 1000px;
-}
-
-.textFormat{
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.battleship-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 60px;
-  margin: 30px 0;
-  background-color: yellow;
+  width: 80%;
+  height: 100%;
+  text-align: center;
 }
 
 #gameboard-container{
   width: 500px;
   display: flex;
   justify-content: space-between;
+  margin: auto;
+}
+
+.battleship-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 250px;
+  height: 60px;
+  background-color: whitesmoke;
+  border: 1px black solid;
 }
 
 .block{
@@ -41,12 +63,38 @@ body{
   border: 1px black solid;
   box-sizing: border-box;
 }
+
+.hover{
+  background-color: grey;
+}
+
+.boom{
+  background-color: red !important;
+}
+
+.empty{
+  background-color: grey !important;
+}
+
 .game-board{
   width: 200px;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
 }
+
+#gameRules{
+  font-family: 'DM Serif Text', serif;
+}
+
+#computer .destroyer,
+#computer .submarine,
+#computer .cruiser,
+#computer .battleship,
+#computer .carrier{
+  background-color: aqua;
+}
+
 .destroyer-preview{
   width: 20px;
   height: 10px;
